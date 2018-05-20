@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Company;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -54,7 +56,7 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
-
+    
     /**
      * Create a new user instance after a valid registration.
      *
@@ -63,8 +65,16 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        
+        $company = Company::create([
+            'name' => $data['company'],
+        ]);
+        
+        
         return User::create([
             'name' => $data['name'],
+            'surname' => $data['surname'],
+            'company_id' => $company->id,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);

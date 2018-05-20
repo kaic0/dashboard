@@ -20,3 +20,18 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+//var sidebar = document.getElementById("#menu-toggle").click(alert("oi"));
+
+//$("#menu-toggle").click(function (e) {
+//                e.preventDefault();
+//                $("#wrapper").toggleClass("toggled");
+//            });
+            
+//$(document).ready(function(){
+//    $('.table').dataTable({
+//        columnDefs: [
+//            {targets: 0, orderable: false, searchable: false},
+//        ]
+//    });
+//});

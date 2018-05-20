@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\User as User;
+use App\Company as Company;
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +26,19 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+//        $users = User::all();
+        $users = User::with('companies')->get();
+        $companies = Company::all();
+        $products = \App\Product::all();
+//        $companies = Company::with('users')->get();
+        
+//        echo "<pre>";
+//        print_r($users[0]->companies);die();
+
+        return view('home', [
+            'users' => $users,
+            'companies' => $companies,
+            'products' => $products
+        ]);
     }
 }
