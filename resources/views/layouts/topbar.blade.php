@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <a href="#menu-toggle" class="mr-5" id="menu-toggle">
             <i class="fa fa-bars"> </i>
         </a>

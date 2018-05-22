@@ -21,8 +21,8 @@
         <div id="app">
             <main>
                 <div id="wrapper" class="toggled">
-                    @include('layouts.topbar')
                     @auth
+                        @include('layouts.topbar')
                         @include('layouts.leftbar')
                     @endauth
 
@@ -32,6 +32,7 @@
                             @yield('content')                            
                         </div>
                     </div>
+                </div>
             </main>
         </div>
     </body>
