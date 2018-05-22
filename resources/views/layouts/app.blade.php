@@ -19,11 +19,9 @@
     </head>
     <body>
         <div id="app">
-            @include('layouts.topbar')
-
             <main>
                 <div id="wrapper" class="toggled">
-                    
+                    @include('layouts.topbar')
                     @auth
                         @include('layouts.leftbar')
                     @endauth

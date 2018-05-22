@@ -13882,6 +13882,7 @@ module.exports = __webpack_require__(43);
  */
 
 __webpack_require__(13);
+//require('./datatables/js/jquery.dataTables.js');
 
 window.Vue = __webpack_require__(36);
 
@@ -13899,10 +13900,10 @@ var app = new Vue({
 
 //var sidebar = document.getElementById("#menu-toggle").click(alert("oi"));
 
-//$("#menu-toggle").click(function (e) {
-//                e.preventDefault();
-//                $("#wrapper").toggleClass("toggled");
-//            });
+$("#menu-toggle").click(function (e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+});
 
 //$(document).ready(function(){
 //    $('.table').dataTable({

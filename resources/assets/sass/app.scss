@@ -8,14 +8,35 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import '~font-awesome/scss/font-awesome.scss';
+
 // Components
 @import "left-bar";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.navbar-dark{
+    background:$dark;
+    #menu-toggle{
+        font-size: 1.9em;
+        color: #fff;
+    }
+}
+
+#sidebar-wrapper{
+    .navbar-dark{
+        /*background:lighten($dark, 7);*/
+        background:#fff;
+    }
 }
 
 .tab-content{
     background: #fff;
+}
+.nav-tabs .nav-link.active{
+    background: #fff !important;
+}
+.tab-content > .tab-pane{
+    padding: 20px;
+}
+.tab-title{
+    font-size: 1.5em;
 }

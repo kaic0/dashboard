@@ -13,10 +13,9 @@ class ProductController extends Controller
      */
     public function index()
     {
+        $products = \App\Product::all();
         return view('modules.products.index', [
-//            'users' => $users,
-//            'companies' => $companies,
-//            'products' => $products
+            'products' => $products
         ]);
     }
 

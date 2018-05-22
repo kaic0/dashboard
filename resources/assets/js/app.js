@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+//require('./datatables/js/jquery.dataTables.js');
 
 window.Vue = require('vue');
 
@@ -23,10 +24,10 @@ const app = new Vue({
 
 //var sidebar = document.getElementById("#menu-toggle").click(alert("oi"));
 
-//$("#menu-toggle").click(function (e) {
-//                e.preventDefault();
-//                $("#wrapper").toggleClass("toggled");
-//            });
+$("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
             
 //$(document).ready(function(){
 //    $('.table').dataTable({

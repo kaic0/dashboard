@@ -1,10 +1,9 @@
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-        <!--                            <li class="sidebar-header">
-                                        <img src="assets/img/user.png" class="user-icon">
-                                        <div>Teodoro</div>
-                                    </li>-->
+        <li class="sidebar-header">
+            <img src="assets/img/user.png" class="user-icon">
+        </li>
         <li>
             <a href="/home">
                 <i class="ti ti-home"></i> 

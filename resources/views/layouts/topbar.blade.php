@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+<nav class="navbar navbar-expand-md navbar-fixed-top">
     <div class="container">
-        <a href="#menu-toggle" class="" id="menu-toggle">
-            <i class="ti ti-menu"> </i>M
+        <a href="#menu-toggle" class="mr-5" id="menu-toggle">
+            <i class="fa fa-bars"> </i>
         </a>
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'Dashboard') }}
