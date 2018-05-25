@@ -22,15 +22,13 @@
             @auth
             <main>
                 <div id="wrapper" class="toggled">
-                    
-                        @include('layouts.topbar')
-                        @include('layouts.leftbar')
+
+                    @include('layouts.topbar')
+                    @include('layouts.leftbar')
 
                     <!-- Page Content -->
                     <div id="page-content-wrapper">
-                        <div class="row">
-                            @yield('content')                            
-                        </div>
+                        @yield('content')                            
                     </div>
                 </div>
             </main>

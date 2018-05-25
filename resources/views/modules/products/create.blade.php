@@ -47,8 +47,10 @@
                         </div>
                         <div class="col-md-3">
                             <label for="category" class="col-form-label text-md-right">{{ __('Categoria') }}</label>
-                            <select id="category" type="category" class="form-control selectpicker" name="category" value="{{ old('quantity') }}">
-                                <option>a</option>
+                            <select id="category" type="category" class="form-control" name="category" value="{{ old('quantity') }}">
+                                @foreach($productCategories as $categorie)
+                                    <option value="{{$categorie->id}}">{{$categorie->name}}</option>
+                                @endforeach
                             </select>
 
                             @if ($errors->has('name'))

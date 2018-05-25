@@ -26,19 +26,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-//        $users = User::all();
         $users = User::with('companies')->get();
         $companies = Company::all();
-        $products = \App\Product::all();
-//        $companies = Company::with('users')->get();
-        
-//        echo "<pre>";
-//        print_r($users[0]->companies);die();
+        $products = \App\Product::with('product_categories');
+        $productCategories = \App\ProductCategory::all();
 
         return view('home', [
             'users' => $users,
             'companies' => $companies,
-            'products' => $products
+            'products' => $products,
+            'productCategories' => $productCategories
         ]);
     }
 }

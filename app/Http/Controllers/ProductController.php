@@ -14,8 +14,11 @@ class ProductController extends Controller
     public function index()
     {
         $products = \App\Product::all();
+        $productCategories = \App\ProductCategory::all();
+        
         return view('modules.products.index', [
-            'products' => $products
+            'products' => $products,
+            'productCategories' => $productCategories
         ]);
     }
 
