@@ -10,41 +10,12 @@
     </ul>
     <div id="tabsJustifiedContent" class="tab-content">
         <div id="home1" class="tab-pane fade active show">
-            <div class="list-group">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <td>#</td>
-                            <td>Nome</td>
-                            <td>Descrição</td>
-                            <td>Quantidade</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @if($products)
-                            @foreach($products as $product)
-                                <tr>
-                                    <td>{{$product->id}}</td>
-                                    <td>{{$product->name}}</td>
-                                    <td>{{$product->description}}</td>
-                                    <td>{{$product->quantity}}</td>
-                                </tr>
-                            @endforeach
-                        @else
-                        <tr>
-                            <td>Nenhum produto cadastrado</td>
-                        </tr>
-                        @endif
-                    </tbody>
-                </table>
-            </div>
+            @include('modules.products.list')
         </div>
         <div id="profile1" class="tab-pane fade">
             <div class="row pb-2">
-                <div class="col-md-7">
-                    <p>Tabs can be used to contain a variety of content &amp; elements. They are a good way to group <a href="" class="link">relevant content</a>. Display initial content in context to the user. Enable the user to flow through
-                        <a href="" class="link">more</a> information as needed.
-                    </p>
+                <div class="col-md-12">
+                    @include('modules.products.create')
                 </div>
             </div>
         </div>

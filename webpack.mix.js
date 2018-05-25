@@ -1,5 +1,7 @@
 let mix = require('laravel-mix');
 
+//import 'laravel-mix';
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management

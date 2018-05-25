@@ -19,12 +19,12 @@
     </head>
     <body>
         <div id="app">
+            @auth
             <main>
                 <div id="wrapper" class="toggled">
-                    @auth
+                    
                         @include('layouts.topbar')
                         @include('layouts.leftbar')
-                    @endauth
 
                     <!-- Page Content -->
                     <div id="page-content-wrapper">
@@ -34,6 +34,7 @@
                     </div>
                 </div>
             </main>
+            @endauth
         </div>
     </body>
     <!-- Scripts -->
