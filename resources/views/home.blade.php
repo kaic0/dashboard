@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="row">
+<div class="row mb-4">
     <div class="col-md-6">
         <div class="card">
             <div class="card-header">Usuários</div>
@@ -97,7 +97,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-5">
         <div class="card">
             <div class="card-header">Categorias</div>
 
@@ -180,7 +180,7 @@
                                 {{$product->quantity}}
                             </td>
                             <td>
-                                {{$product->product_category_id}}
+                                {{$product->categories->name}}
                             </td>
                         </tr>
                         @endforeach

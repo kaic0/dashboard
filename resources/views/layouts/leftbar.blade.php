@@ -2,18 +2,14 @@
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-header">
-            <img src="assets/img/user.png" class="user-icon">
+            <i class="fab fa-2x fa-grav"></i> 
+            Cosmo<b>Admin</b>
+            <!--{{ config('app.name', 'Dashboard') }}-->
         </li>
         <li>
             <a href="/home">
-                <i class="ti ti-home"></i> 
+                <i class="fa fa-home"></i> 
                 Home
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="ti ti-dashboard"></i>
-                Dashboard
             </a>
         </li>
         <li class="sidebar-title">
@@ -21,37 +17,37 @@
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-shopping-cart"></i>
+                <i class="fa fa-shopping-cart"></i>
                 Minhas Vendas
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-bag"></i>
+                <i class="fa fa-shopping-bag"></i>
                 Minhas Compras
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-user"></i>
+                <i class="fa fa-user"></i>
                 Clientes
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-truck"></i>
+                <i class="fa fa-shipping-fast"></i>
                 Logística
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-pie-chart"></i>
+                <i class="fa fa-chart-line"></i>
                 Estatístiscas
             </a>
         </li>
         <li>
             <a href="/estoque">
-                <i class="ti ti-package"></i>
+                <i class="fa fa-box-open"></i>
                 Estoque
             </a>
         </li>
@@ -60,19 +56,19 @@
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-settings"></i>
+                <i class="fa fa-cogs"></i>
                 Configurações
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-hummer"></i>
+                <i class="fa fa-life-ring"></i>
                 Suporte
             </a>
         </li>
         <li>
             <a href="#">
-                <i class="ti ti-power-off"></i>
+                <i class="fa fa-space-shuttle"></i>
                 Sair
             </a>
         </li>

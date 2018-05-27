@@ -28,7 +28,7 @@ class HomeController extends Controller
     {
         $users = User::with('companies')->get();
         $companies = Company::all();
-        $products = \App\Product::with('product_categories');
+        $products = \App\Product::with('categories')->get();
         $productCategories = \App\ProductCategory::all();
 
         return view('home', [

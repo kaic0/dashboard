@@ -3,9 +3,6 @@
         <a href="#menu-toggle" class="mr-5" id="menu-toggle">
             <i class="fa fa-bars"> </i>
         </a>
-        <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'Dashboard') }}
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +20,8 @@
                 <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                 <li><a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a></li>
                 @else
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" style="display: flex;">
+                    <img class="user-img" src="images/user.png">
                     <a id="navbarDropdown" 
                        class="nav-link dropdown-toggle" 
                        href="#" role="button"
@@ -36,13 +34,14 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="">
+                            <i class="fa fa-user-astronaut"></i> Meu Perfil
+                        </a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
+                                <i class="fa fa-space-shuttle"></i>
                             {{ __('Logout') }}
-                        </a>
-                        <a class="dropdown-item" href="">
-                            Meu Perfil
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf

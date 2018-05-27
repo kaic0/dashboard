@@ -8,13 +8,19 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import '~font-awesome/scss/font-awesome.scss';
+/*@import '~font-awesome/scss/font-awesome.scss';*/
+/*@import "fontawesome/scss/fontawesome";*/
 
 @import '~bootstrap-select/sass/bootstrap-select.scss'; 
+
+@import '~datatables/media/css/jquery.dataTables.min.css';
 
 // Components
 @import "left-bar";
 
+.navbar, .navbar a{
+    color: $text-dark;
+}
 .navbar-dark{
     background:$dark;
     #menu-toggle{
@@ -40,7 +46,8 @@
     padding: 20px;
 }
 .tab-title{
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color:lighten($text-dark, 10);
 }
 .divider-text{
     font-size: 0.8em;
@@ -70,7 +77,15 @@
     float: left;
     margin-left: 5px;
 }
-.row{
-    padding-top:10px;
-    padding-bottom:10px;
+.navbar .user-img{
+    height: 39px;
+    border-radius: 39px;
+}
+.dropdown-menu{
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+table{
+    width: 100% !important;
 }

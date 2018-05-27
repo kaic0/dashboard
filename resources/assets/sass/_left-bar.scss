@@ -29,7 +29,7 @@ and open the template in the editor.
     height: 1px;
     display: block;
     content:' ';
-    background: $text-dark;
+    background: lighten($text-dark, 40);
     width: 0;
     transition: width 2s;
 }
@@ -41,32 +41,20 @@ and open the template in the editor.
     height: 58px;
 }
 .sidebar-header{
-    /*background: lighten($dark, 5);*/
-    /*background-image: orange;*/
-    background--size:cover;
+    background-size:cover;
     background-size: 100%; 
-    margin-bottom: 10px;
-    padding: 15px;
-    cursor: pointer;
     transition: ease 1s;
+    line-height: 58px !important;
 }
-/*.sidebar-header:hover{
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
-}
-.sidebar-header:hover>.user-icon{
-    height: 65px !important;
-    transition: ease 0.4s;
-}*/
 .sidebar-title{
     color: $text-dark;
     margin-left: 10px;
-    padding: 10px;
     font-weight: bold;
     font-size: 14px;
 }
 .sidebar-title span{
     display: block;
-    border-top: 1px solid #f0f0f0;
+    /*border-top: 1px solid #f0f0f0;*/
 }
 
 /* sidebar */
@@ -83,17 +71,17 @@ and open the template in the editor.
 }
 
 #wrapper.toggled {
-    padding-left: 285px;
+    padding-left: 215px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 270px;
+    left: 215px;
     top: 0;
     width: 0;
     height: 100%;
-    margin-left: -270px;
+    margin-left: -215px;
     overflow-y: auto;
     background: #fff;
     -webkit-transition: all 0.5s ease;
@@ -103,7 +91,7 @@ and open the template in the editor.
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 270px;
+    width: 215px;
 }
 
 #page-content-wrapper {
@@ -114,7 +102,7 @@ and open the template in the editor.
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -270px;
+    margin-right: -215px;
 }
 
 #page-content-wrapper{
@@ -127,7 +115,7 @@ and open the template in the editor.
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 270px;
+    width: 215px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -148,7 +136,7 @@ and open the template in the editor.
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: $text-dark;
-    background: rgba(255, 255, 255, 0.2);
+    background: lighten($dark, 90);
 }
 
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
@@ -175,13 +163,13 @@ and open the template in the editor.
         padding-left: 0;
     }
     #wrapper.toggled {
-        padding-left: 270px;
+        padding-left: 215px;
     }
     #sidebar-wrapper {
         width: 0;
     }
     #wrapper.toggled #sidebar-wrapper {
-        width: 270px;
+        width: 215px;
     }
     #page-content-wrapper {
         /*padding: 20px;*/

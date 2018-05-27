@@ -6,6 +6,7 @@
                 <td>Nome</td>
                 <td>Descrição</td>
                 <td>Quantidade</td>
+                <td>Categoria</td>
             </tr>
         </thead>
         <tbody>
@@ -16,6 +17,7 @@
                     <td>{{$product->name}}</td>
                     <td>{{$product->description}}</td>
                     <td>{{$product->quantity}}</td>
+                    <td>{{$product->categories->name}}</td>
                 </tr>
                 @endforeach
             @else

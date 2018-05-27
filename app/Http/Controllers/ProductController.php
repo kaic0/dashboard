@@ -13,7 +13,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = \App\Product::all();
+        $products = \App\Product::with('categories')->get();
         $productCategories = \App\ProductCategory::all();
         
         return view('modules.products.index', [
@@ -27,9 +27,9 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(array $data)
     {
-        //
+        
     }
 
     /**
@@ -40,7 +40,16 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        return $request;
+        
+        $product = \App\Product::create([
+            'name' => $request->name,
+            'description' => $request->description,
+            'quantity' => $request->quantity,
+            'product_category_id' => $request->category_id
+        ]);
+        
+        return redirect()->route('estoque');
     }
 
     /**

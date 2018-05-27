@@ -18,4 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/estoque', 'ProductController@index')->name('estoque');
+Route::post('/estoque', 'ProductController@store')->name('estoque');
+
+
+Route::get('/categoria-produtos', 'ProductCategoryController@index')->name('categoria-produtos');
+Route::post('/categoria-produtos', 'ProductCategoryController@store')->name('categoria-produtos');
