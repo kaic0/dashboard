@@ -3,20 +3,20 @@
 @section('content')
 <div class="col-md-12">
     <ul id="tabsJustified" class="nav nav-tabs">
-        <li class="nav-item tab-title">Estoque</li>
+        <li class="nav-item tab-title"><i class="fa fa-box-open"></i> Estoque</li>
         <li class="nav-item ml-auto"><a href="" data-target="#home1" data-toggle="tab" class="nav-link small text-uppercase active ">Produtos</a></li>
         <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab" class="nav-link small text-uppercase">Cadastrar</a></li>
         <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab" class="nav-link small text-uppercase">Messages</a></li>
     </ul>
     <div id="tabsJustifiedContent" class="tab-content">
         <div id="home1" class="tab-pane fade active show">
-            @include('modules.products.list')
+            <div class="row">
+                @include('modules.products.list')
+            </div>
         </div>
         <div id="profile1" class="tab-pane fade">
             <div class="row pb-2">
-                <div class="col-md-12">
-                    @include('modules.products.create')
-                </div>
+                @include('modules.products.create')
             </div>
         </div>
         <div id="messages1" class="tab-pane fade">

@@ -22,7 +22,7 @@
         <div id="app">
             @auth
             <main>
-                <div id="wrapper" class="toggled">
+                <div id="wrapper" class="">
 
                     @include('layouts.topbar')
                     @include('layouts.leftbar')

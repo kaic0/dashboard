@@ -78,8 +78,10 @@
     margin-left: 5px;
 }
 .navbar .user-img{
-    height: 39px;
-    border-radius: 39px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 4px;
+    border: 1px solid #c0c0c0
 }
 .dropdown-menu{
     border-top: none;
@@ -88,4 +90,11 @@
 }
 table{
     width: 100% !important;
+}
+.dataTables_filter input[type='search']{
+    border:none;
+    border-bottom: 1px solid $dark;
+}
+.topbar{
+    border-bottom: 1px solid #f4f4f4;
 }

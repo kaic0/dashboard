@@ -27,7 +27,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #363636;
+  --dark: #565656;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -2088,16 +2088,16 @@ pre code {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #c7c7c7;
+  background-color: #d0d0d0;
 }
 
 .table-hover .table-dark:hover {
-  background-color: #bababa;
+  background-color: #c3c3c3;
 }
 
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #bababa;
+  background-color: #c3c3c3;
 }
 
 .table-active,
@@ -3140,42 +3140,42 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #363636;
-  border-color: #363636;
+  background-color: #565656;
+  border-color: #565656;
 }
 
 .btn-dark:hover {
   color: #fff;
-  background-color: #232323;
-  border-color: #1d1c1c;
+  background-color: #434343;
+  border-color: #3d3c3c;
 }
 
 .btn-dark:focus,
 .btn-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
 }
 
 .btn-dark.disabled,
 .btn-dark:disabled {
   color: #fff;
-  background-color: #363636;
-  border-color: #363636;
+  background-color: #565656;
+  border-color: #565656;
 }
 
 .btn-dark:not(:disabled):not(.disabled):active,
 .btn-dark:not(:disabled):not(.disabled).active,
 .show > .btn-dark.dropdown-toggle {
   color: #fff;
-  background-color: #1d1c1c;
-  border-color: #161616;
+  background-color: #3d3c3c;
+  border-color: #363636;
 }
 
 .btn-dark:not(:disabled):not(.disabled):active:focus,
 .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
 }
 
 .btn-outline-primary {
@@ -3459,27 +3459,27 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  color: #363636;
+  color: #565656;
   background-color: transparent;
   background-image: none;
-  border-color: #363636;
+  border-color: #565656;
 }
 
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: #363636;
-  border-color: #363636;
+  background-color: #565656;
+  border-color: #565656;
 }
 
 .btn-outline-dark:focus,
 .btn-outline-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
 }
 
 .btn-outline-dark.disabled,
 .btn-outline-dark:disabled {
-  color: #363636;
+  color: #565656;
   background-color: transparent;
 }
 
@@ -3487,15 +3487,15 @@ fieldset:disabled a.btn {
 .btn-outline-dark:not(:disabled):not(.disabled).active,
 .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
-  background-color: #363636;
-  border-color: #363636;
+  background-color: #565656;
+  border-color: #565656;
 }
 
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus,
 .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(54, 54, 54, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.5);
 }
 
 .btn-link {
@@ -5584,14 +5584,14 @@ input[type="button"].btn-block {
 
 .badge-dark {
   color: #fff;
-  background-color: #363636;
+  background-color: #565656;
 }
 
 .badge-dark[href]:hover,
 .badge-dark[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #1d1c1c;
+  background-color: #3d3c3c;
 }
 
 .jumbotron {
@@ -5740,17 +5740,17 @@ input[type="button"].btn-block {
 }
 
 .alert-dark {
-  color: #1c1c1c;
-  background-color: #d7d7d7;
-  border-color: #c7c7c7;
+  color: #2d2d2d;
+  background-color: #dddddd;
+  border-color: #d0d0d0;
 }
 
 .alert-dark hr {
-  border-top-color: #bababa;
+  border-top-color: #c3c3c3;
 }
 
 .alert-dark .alert-link {
-  color: #030303;
+  color: #141313;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -6038,20 +6038,20 @@ input[type="button"].btn-block {
 }
 
 .list-group-item-dark {
-  color: #1c1c1c;
-  background-color: #c7c7c7;
+  color: #2d2d2d;
+  background-color: #d0d0d0;
 }
 
 .list-group-item-dark.list-group-item-action:hover,
 .list-group-item-dark.list-group-item-action:focus {
-  color: #1c1c1c;
-  background-color: #bababa;
+  color: #2d2d2d;
+  background-color: #c3c3c3;
 }
 
 .list-group-item-dark.list-group-item-action.active {
   color: #fff;
-  background-color: #1c1c1c;
-  border-color: #1c1c1c;
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
 }
 
 .close {
@@ -6937,14 +6937,14 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #363636 !important;
+  background-color: #565656 !important;
 }
 
 a.bg-dark:hover,
 a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d1c1c !important;
+  background-color: #3d3c3c !important;
 }
 
 .bg-white {
@@ -7024,7 +7024,7 @@ button.bg-dark:focus {
 }
 
 .border-dark {
-  border-color: #363636 !important;
+  border-color: #565656 !important;
 }
 
 .border-white {
@@ -10273,12 +10273,12 @@ a.text-light:focus {
 }
 
 .text-dark {
-  color: #363636 !important;
+  color: #565656 !important;
 }
 
 a.text-dark:hover,
 a.text-dark:focus {
-  color: #1d1c1c !important;
+  color: #3d3c3c !important;
 }
 
 .text-body {
@@ -10897,7 +10897,7 @@ and open the template in the editor.
 
 .sidebar-nav li a i {
   float: left;
-  color: #363636;
+  color: #565656;
 }
 
 .sidebar-nav li a:hover i {
@@ -10937,7 +10937,7 @@ and open the template in the editor.
   height: 1px;
   display: block;
   content: ' ';
-  background: #9c9c9c;
+  background: #bcbcbc;
   width: 0;
   -webkit-transition: width 2s;
   transition: width 2s;
@@ -10959,11 +10959,11 @@ and open the template in the editor.
   background-size: 100%;
   -webkit-transition: ease 1s;
   transition: ease 1s;
-  line-height: 58px !important;
+  line-height: 64px !important;
 }
 
 .sidebar-title {
-  color: #363636;
+  color: #565656;
   margin-left: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -10977,7 +10977,7 @@ and open the template in the editor.
 /* sidebar */
 
 #wrapper {
-  padding-left: 0;
+  padding-left: 50px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: #fff;
@@ -10993,7 +10993,7 @@ and open the template in the editor.
   position: fixed;
   left: 215px;
   top: 0;
-  width: 0;
+  width: 50px;
   height: 100%;
   margin-left: -215px;
   overflow-y: auto;
@@ -11047,7 +11047,7 @@ and open the template in the editor.
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #363636;
+  color: #565656;
   background: white;
 }
 
@@ -11073,15 +11073,19 @@ and open the template in the editor.
 
 @media (min-width: 768px) {
   #wrapper {
-    padding-left: 0;
+    padding-left: 50px;
   }
 
   #wrapper.toggled {
     padding-left: 215px;
   }
 
+  #wrapper .logo {
+    text-indent: 5px;
+  }
+
   #sidebar-wrapper {
-    width: 0;
+    width: 50px;
   }
 
   #wrapper.toggled #sidebar-wrapper {
@@ -11101,11 +11105,11 @@ and open the template in the editor.
 
 .navbar,
 .navbar a {
-  color: #363636;
+  color: #565656;
 }
 
 .navbar-dark {
-  background: #363636;
+  background: #565656;
 }
 
 .navbar-dark #menu-toggle {
@@ -11132,7 +11136,7 @@ and open the template in the editor.
 
 .tab-title {
   font-size: 1.2em;
-  color: #504f4f;
+  color: #706f6f;
 }
 
 .divider-text {
@@ -11167,8 +11171,10 @@ and open the template in the editor.
 }
 
 .navbar .user-img {
-  height: 39px;
-  border-radius: 39px;
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 4px;
+  border: 1px solid #c0c0c0;
 }
 
 .dropdown-menu {
@@ -11179,5 +11185,14 @@ and open the template in the editor.
 
 table {
   width: 100% !important;
+}
+
+.dataTables_filter input[type='search'] {
+  border: none;
+  border-bottom: 1px solid #565656;
+}
+
+.topbar {
+  border-bottom: 1px solid #f4f4f4;
 }
 

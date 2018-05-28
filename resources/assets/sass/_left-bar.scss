@@ -44,7 +44,7 @@ and open the template in the editor.
     background-size:cover;
     background-size: 100%; 
     transition: ease 1s;
-    line-height: 58px !important;
+    line-height: 64px !important;
 }
 .sidebar-title{
     color: $text-dark;
@@ -60,7 +60,7 @@ and open the template in the editor.
 /* sidebar */
 
 #wrapper {
-    padding-left: 0;
+    padding-left: 50px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -79,7 +79,7 @@ and open the template in the editor.
     position: fixed;
     left: 215px;
     top: 0;
-    width: 0;
+    width: 50px;
     height: 100%;
     margin-left: -215px;
     overflow-y: auto;
@@ -160,13 +160,16 @@ and open the template in the editor.
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 0;
+        padding-left: 50px;
     }
     #wrapper.toggled {
         padding-left: 215px;
     }
+    #wrapper .logo{
+        text-indent: 5px;
+    }
     #sidebar-wrapper {
-        width: 0;
+        width: 50px;
     }
     #wrapper.toggled #sidebar-wrapper {
         width: 215px;

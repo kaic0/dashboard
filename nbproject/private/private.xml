@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/dashboard/app/Http/Controllers/ProductController.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/layouts/app.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/assets/js/bootstrap-select.js</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/home.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/assets/js/app.js</file>
+            <file>file:/C:/wamp64/www/dashboard/app/Http/Controllers/HomeController.php</file>
+            <file>file:/C:/wamp64/www/dashboard/app/Http/Middleware/VerifyCsrfToken.php</file>
+            <file>file:/C:/wamp64/www/dashboard/app/Product.php</file>
+            <file>file:/C:/wamp64/www/dashboard/routes/web.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/layouts/leftbar.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/app/User.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/assets/sass/_left-bar.scss</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/modules/products/list.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/modules/products/create.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/assets/sass/app.scss</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/layouts/topbar.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/app/Http/Controllers/ProductCategoryController.php</file>
+            <file>file:/C:/wamp64/www/dashboard/resources/views/modules/products/index.blade.php</file>
+            <file>file:/C:/wamp64/www/dashboard/app/Http/Controllers/Auth/RegisterController.php</file>
+            <file>file:/C:/wamp64/www/dashboard/app/ProductCategory.php</file>
+        </group>
+    </open-files>
+</project-private>

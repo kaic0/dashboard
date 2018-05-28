@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-fixed-top">
+<nav class="navbar navbar-expand-md navbar-fixed-top topbar">
     <div class="container-fluid">
         <a href="#menu-toggle" class="mr-5" id="menu-toggle">
             <i class="fa fa-bars"> </i>
@@ -20,6 +20,48 @@
                 <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                 <li><a class="nav-link" href="{{ route('register') }}">{{ __('Cadastre-se') }}</a></li>
                 @else
+                <li class="nav-item dropdown mr-3">
+                    <a id="navbarDropdown" 
+                       class="nav-link dropdown-toggle" 
+                       href="#" role="button"
+                       data-toggle="dropdown" 
+                       aria-haspopup="true" 
+                       aria-expanded="false" 
+                       v-pre>
+                        <i class="far fa-envelope"></i>
+                        <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="">
+                            <i class="fa fa-user-astronaut"></i>
+                        </a>
+                        <a class="dropdown-item">
+                                <i class="fa fa-bell"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                    <a id="navbarDropdown" 
+                       class="nav-link dropdown-toggle" 
+                       href="#" role="button"
+                       data-toggle="dropdown" 
+                       aria-haspopup="true" 
+                       aria-expanded="false" 
+                       v-pre>
+                        <i class="far fa-bell"></i>
+                        <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="">
+                            <i class="fa fa-user-astronaut"></i>
+                        </a>
+                        <a class="dropdown-item">
+                                <i class="fa fa-bell"></i>
+                        </a>
+                    </div>
+                </li>
                 <li class="nav-item dropdown" style="display: flex;">
                     <img class="user-img" src="images/user.png">
                     <a id="navbarDropdown" 

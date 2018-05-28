@@ -13909,14 +13909,18 @@ $("#menu-toggle").click(function (e) {
     $("#wrapper").toggleClass("toggled");
 });
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 $(".table").dataTable({
     columnDefs: [{ targets: 0, orderable: false, searchable: false }],
     "language": {
         "lengthMenu": "Mostrando _MENU_ registros por página",
-        "zeroRecords": "Nada foi encontrado :(",
+        "zeroRecords": "Nada foi encontrado",
         "info": "Página _PAGE_ de _PAGES_",
         "infoEmpty": "Nenhum registro encontrado :(",
-        "infoFiltered": "(Filtrados de _MAX_ registros)",
+        "infoFiltered": "(Total de _MAX_ registros)",
         "sSearch": "<i class='fa fa-search'></i>",
         "sLoadingRecords": "Carregando...",
         "oPaginate": {
